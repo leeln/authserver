@@ -1,10 +1,2 @@
 authserver:
   image: docker.repo.leeln.com/leeln/authserver
-LB-authserver:
-  ports:
-  - 8100:8080
-  tty: true
-  image: rancher/load-balancer-service
-  links:
-  - authserver:authserver
-  stdin_open: true
